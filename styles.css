@@ -6,7 +6,8 @@
 }
 .hero__section{
     background-image: url(./images/heroSectionBackground.png);
-    min-height: 60vh;
+    height: 50%;
+    min-height: 50%;
     background-size: cover;
     background-position: center;
 }
@@ -15,8 +16,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px 45px;
-    height: auto;
-    gap: 1rem;
+    height: 60px;
 }
 nav a{
     color: white;
@@ -26,7 +26,89 @@ nav a{
     display: flex;
     gap: 1rem;
 }
+
+.navbar__menu_container .user__icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+.hero__section_container{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 32px;
+    height: calc(60vh, 60px);
+}
 .hero_section_logo{
-    background-color: black;
+    width: 250px;
+    margin: 10px;
+}
+.hero_section_title{
+    color: white;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+}
+.hero__section_input_container{
+    display: flex;
+    background-color: white;
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    place-items: center;
+}
+.input_container_search,.input_container_location{
+    padding: 6px;
+    border: none;
+    outline: none;
+}
+.input_container_location{
+    border-right: 2px solid gray;
     width: 35%;
 }
+.input_container_search{
+    width: 65%;
+
+}
+
+@media only screen and (max-width:500px){
+    .navbar__menu_container .user__icon{
+        display: flex;
+    }
+    .link{
+        display: none;
+    }
+    .hero__section{
+        min-height: 80vh;
+    }
+    .navbar{
+        padding: 16px;
+    }
+    .hero_section_title{
+        text-align: center;
+    }
+    .hero__section_input_container{
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        flex-wrap: wrap;
+        place-items: center;
+        width: 100%;
+        height: cal(80vh-60px);
+        gap: 1rem;
+    }
+    .input_container_search,.input_container_location{
+        padding: 15px;
+        flex-direction: column;
+        width: 95%;
+        border-radius: 10px;
+    }
+} 
