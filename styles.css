@@ -87,7 +87,7 @@ nav a{
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    width: 90%;
+    width: 80%;
     margin: 3rem auto;
 }
 .we__offer_card{
@@ -120,6 +120,90 @@ nav a{
 .we__offer_content p {
     font-size: 12px;
 
+}
+
+/* collection section */
+.collections{
+    width: 80%;
+    margin: auto;
+}
+.collections h1{
+    font-size: 36px;
+    font-weight: 400;
+}
+.sub__heading_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: gray;
+    gap: 1rem;
+
+}
+.sub__heading_container span:nth-child(2){
+    color: #ff7e8b;
+    font-size: 13px;
+    cursor: pointer;
+}
+.collections_card_container{
+    display: flex;
+    gap: 0.5rem;
+    place-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.card{
+    align-items: flex-end;
+    min-width: 240px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+
+}
+.card1{
+    background-image: url(./images/collection1.jpg);
+}
+.card2{
+    background-image: url(./images/collection2.jpg);
+}
+.card3{
+    background-image: url(./images/collection3.jpg);
+}
+.card4{
+    background-image: url(./images/collection4.jpg);
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0 ,0, 0.8) 0%,
+        rgba(0, 0 ,0, 0.05) 50%,
+        rgba(0, 0 ,0, 0.05) 85%
+        /* rgba(0, 0, 0, 0)100% */
+
+    );
+    z-index: 5;
+}
+.content{
+    color: white;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px 16px;
+    font-size: 0.8rem;
+    z-index: 10;
+
+}
+.content h4{
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 /* banner midia query */
 
@@ -156,3 +240,9 @@ nav a{
         border-radius: 10px;
     }
 } 
+/* @media only screen and (max-width:500px){
+    .collections_card_container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+} */
