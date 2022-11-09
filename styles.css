@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+.hero__section{
+    background-image: url(./images/heroSectionBackground.png);
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 45px;
+    height: auto;
+    gap: 1rem;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+.navbar__menu_container{
+    display: flex;
+    gap: 1rem;
+}
+.hero_section_logo{
+    background-color: black;
+    width: 35%;
+}
