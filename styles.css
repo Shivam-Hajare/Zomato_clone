@@ -87,7 +87,7 @@ nav a{
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    width: 90%;
+    width: 85%;
     margin: 3rem auto;
 }
 .we__offer_card{
@@ -124,7 +124,7 @@ nav a{
 
 /* collection section */
 .collections{
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
 .collections h1{
@@ -301,9 +301,6 @@ nav a{
     cursor: pointer;
 }
 
-/* button:hover{
-    cursor: pointer;
-} */
 
 .right .download__app_container{
     display: flex;
@@ -360,8 +357,8 @@ nav a{
     width: 100%;
 }
 .footer_section1{
-    width: 90%;
-    margin: auto;
+    width: 85%;
+    margin: 50px auto auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -389,7 +386,7 @@ nav a{
 
 /* link section grid */
 .navigation_container{
-    width: 90%;
+    width: 85%;
     margin: auto;
     display: grid;
     grid-template-columns:repeat(5, 1fr);;
@@ -435,7 +432,7 @@ nav a{
     width: 100%;
 }
 .disclamer{
-    width: 90%;
+    width: 85%;
     margin: auto;
     color: gray;
     font-size: 12px;
@@ -459,3 +456,53 @@ nav a{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+/* explore_section css */
+
+.explore_section{
+    width: 100%;
+    height: auto;
+}
+.explore_container{
+    height: auto;
+    width: 85%;
+    margin: 20px auto 20px auto ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+
+}
+.explore_container h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.explore_Subcontainer{
+    display: flex;
+    padding: 10px;
+    justify-content:center;
+    border: 1px solid rgb(232, 228, 228);
+    border-radius: 5px;
+}
+.explore_Subcontainer h5{
+    flex: 1;
+    font-weight: 400;
+    color: rgb(28, 28, 28);
+    font-size: 20px;
+    line-height: 26px;
+}
+.explore_Subcontainer button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.explore_Subcontainer button i{
+    color: black;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
