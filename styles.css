@@ -353,3 +353,109 @@ nav a{
         flex-direction: column;
     }
 }
+
+/* footer section */
+
+.footer{
+    width: 100%;
+}
+.footer_section1{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.footer_section1 img{
+    width:120px;
+}
+.section1__buttonContainer{
+    display: flex;
+    gap: 1.5rem;
+}
+.section1__buttonContainer button{
+    width: 100px;
+    height: 35px;
+    padding: 5px;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: gray solid 1px;
+    background-color: transparent;
+}
+
+/* link section grid */
+.navigation_container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);;
+    gap: 1rem;
+    padding: 3rem 0;    
+}
+.link__container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.link__container h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+.footer__link{
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+}
+.footer__link:hover{
+    color: black;
+}
+.social__links_container button{
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.social__links_container button i{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__section_logos{
+    width: 100%;
+}
+.disclamer{
+    width: 90%;
+    margin: auto;
+    color: gray;
+    font-size: 12px;
+    border-top: 1px solid gray;
+    padding-top: 1.5rem;
+}
+
+@media only screen and (max-width: 900px){
+    .navigation_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width: 600px){
+    .navigation_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .navigation_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
